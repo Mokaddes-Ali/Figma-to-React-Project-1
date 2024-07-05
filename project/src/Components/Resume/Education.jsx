@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGraduationCap } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
+
 const educationData = [
   { id: 1, title: "Bachelor's Degree", description: "University A", color: 'bg-blue-500' },
   { id: 2, title: "Master's Degree", description: "University B", color: 'bg-green-500' },

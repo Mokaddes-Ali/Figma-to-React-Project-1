@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Works from './Pages/Works';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
+import Home from './Pages/Home';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/Works" element={<Works />} />
             <Route path="/Blog" element={<Blog />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/Home" element={<Home />} />
             <Route path="/cv.pdf" element={<div>Your CV PDF will open/download here.</div>} />
           </Routes>
         </div>

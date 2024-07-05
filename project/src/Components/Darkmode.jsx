@@ -19,15 +19,15 @@ function Darkmode() {
   };
 
   return (
-    <div className=" bg-white dark:bg-gray-900 flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <button
         onClick={toggleDarkMode}
-        className="p-2 bg-gray-200 dark:bg-gray-800 rounded-full"
+        className="p-3 rounded-full bg-white dark:bg-black"
       >
         {darkMode ? (
-          <IoIosSunny className=" w-6 h-6 text-yellow-500" />
+          <IoIosSunny className=" w-6 h-6 text-white " />
         ) : (
-          <FaRegMoon  className="w-6 h-6 text-gray-500" />
+          <FaRegMoon  className="w-6 h-6 text-slate-900 " />
         )}
       </button>
     </div>

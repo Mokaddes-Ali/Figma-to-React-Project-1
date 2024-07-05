@@ -4,8 +4,7 @@ import AboutCard from '../Components/AboutCard';
 
 const About = () => {
   return (
-    <div className="p-4">
-      <Sidebar />
+    <div className="p-4 ml-24 mr-20 mt-10">
       <AboutCard />
     </div>
   );
