@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className="w-64 h-screen bg-gray-800 text-white flex flex-col items-center p-4">
+    <div className="w-64 h-screen bg-gray-800 text-white flex flex-col items-center p-4 dark:bg-slate-600">
       <img src="path-to-your-image.jpg" alt="Profile" className="w-32 h-32 rounded-full mt-4" />
       <h1 className="mt-4 text-xl font-semibold">Your Name</h1>
       <p className="mt-2 text-center">Your short bio goes here. This is a text description.</p>
