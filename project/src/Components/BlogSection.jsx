@@ -16,32 +16,35 @@ const BlogSection = () => {
   };
 
   const blogs = [
-    { image: 'path/to/image1.jpg', title: 'Blog Title 1', description: 'Blog description 1' },
-    { image: 'path/to/image2.jpg', title: 'Blog Title 2', description: 'Blog description 2' },
-    { image: 'path/to/image1.jpg', title: 'Blog Title 1', description: 'Blog description 1' },
-    { image: 'path/to/image2.jpg', title: 'Blog Title 2', description: 'Blog description 2' },
-    { image: 'path/to/image1.jpg', title: 'Blog Title 1', description: 'Blog description 1' },
-    { image: 'path/to/image2.jpg', title: 'Blog Title 2', description: 'Blog description 2' },
-    { image: 'path/to/image1.jpg', title: 'Blog Title 1', description: 'Blog description 1' },
-    { image: 'path/to/image2.jpg', title: 'Blog Title 2', description: 'Blog description 2' },
-    { image: 'path/to/image1.jpg', title: 'Blog Title 1', description: 'Blog description 1' },
-    { image: 'path/to/image2.jpg', title: 'Blog Title 2', description: 'Blog description 2' },
-    { image: 'path/to/image1.jpg', title: 'Blog Title 1', description: 'Blog description 1' },
-    { image: 'path/to/image2.jpg', title: 'Blog Title 2', description: 'Blog description 2' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-1.png&w=640&q=75', title: 'Blog Title 1', description: 'Blog description 1' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-2.png&w=640&q=75', title: 'Blog Title 2', description: 'Blog description 2' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-3.png&w=640&q=75', title: 'Blog Title 1', description: 'Blog description 1' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-4.png&w=640&q=75', title: 'Blog Title 2', description: 'Blog description 2' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-1.png&w=640&q=75', title: 'Blog Title 1', description: 'Blog description 1' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-2.png&w=640&q=75', title: 'Blog Title 2', description: 'Blog description 2' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-3.png&w=640&q=75', title: 'Blog Title 1', description: 'Blog description 1' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-4.png&w=640&q=75', title: 'Blog Title 2', description: 'Blog description 2' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-1.png&w=640&q=75', title: 'Blog Title 1', description: 'Blog description 1' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-2.png&w=640&q=75', title: 'Blog Title 2', description: 'Blog description 2' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-3.png&w=640&q=75', title: 'Blog Title 1', description: 'Blog description 1' },
+    { image: 'https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2Fblog-img-4.png&w=640&q=75', title: 'Blog Title 2', description: 'Blog description 2' },
+   
     // Add more blog data here...
   ];
 
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold text-center mb-6">Blog Section</h1>
-      <Slider {...settings}>
-        {blogs.map((blog, index) => (
-          <div key={index} className="px-2">
-            <BlogCard {...blog} />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <div>
+     <div className="container mx-auto py-8">
+     <h1 className="text-3xl font-bold text-center mb-6">Blog Section</h1>
+     <Slider {...settings}>
+       {blogs.map((blog, index) => (
+         <div key={index} className="px-2">
+           <BlogCard {...blog} />
+         </div>
+       ))}
+     </Slider>
+   </div>
+   </div>
   );
 };
 

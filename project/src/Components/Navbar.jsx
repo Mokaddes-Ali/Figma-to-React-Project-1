@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="flex items-center ml-32 mt-16 mb-10">
       <img src= {logo} alt="Logo" className="h-9 mr-2" />
         
-        <div className = "ml-[750px]" >
+        <div className = "ml-[820px]" >
         <Darkmode  />
         </div>
         <div className="ml-[10px]">

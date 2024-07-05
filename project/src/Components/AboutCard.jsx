@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaPaintBrush, FaMobileAlt, FaCamera, FaCode } from 'react-icons/fa';
 import Sidebar from './Sidebar';
-import ima from "../assets/Images/parson-img-1.webp"
+import { IoRemoveOutline } from "react-icons/io5";
+import AboutSliee from './AboutSliee';
 
 const About = () => {
   return (
@@ -11,31 +12,31 @@ const About = () => {
         <Sidebar />
       </div>
       {/* Right of the About Section */}
-    <div className="p-8 m-12 rounded-lg shadow-md text-gray-800">
-      <h1 className="text-3xl font-bold mb-6 text-left">About Me</h1>
-      <p className="mb-4 text-left">
+    <div className="p-8 rounded-2xl bg-white dark:bg-black dark:text-white shadow-md text-gray-800 ml-12 w-[850px]">
+      <h1 className="text-3xl font-bold mb-6 text-left flex">About Me <span className="mt-2"><IoRemoveOutline className='text-8xl -mt-9 -ml-4' /></span></h1>
+      <p className="mb-8 text-left -mt-8">
       I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
        I enjoy turning complex problems into simple, beautiful and intuitive designs.
       </p>
       <p className="mb-12 text-left">
         Feel free to elaborate on your professional journey and personal experiences that have shaped you into who you are today.
-        Feel free to elaborate on your professional journey and personal experiences that have shaped you into who you are today.
+        Feel free to elaborate on your professional you into who you are today.
       </p>
       
-      <h2 className="text-2xl font-semibold mb-4 text-center">What I Do</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-white p-6 rounded-lg shadow-md flex items-center text-center">
+      <h2 className="text-2xl font-semibold mb-6 left -mt-3 ">What I Do</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="bg-lime-100 dark:bg-black dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
           <div className="card-icon ">
-          <FaPaintBrush size={40} className="text-blue-500 mb-4" />
+          <FaPaintBrush size={30} className="text-blue-500 -mt-16" />
           </div>
           <div className="text-left space-y-3 ml-4">
           <h3 className="text-xl font-bold mb-2">UI/UX Design</h3>
           <p>Creating intuitive and beautiful user interfaces and experiences.Creating intuitive and beautiful user interfaces and experiences</p>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md flex items-center text-center">
+        <div className="bg-gray-300 dark:bg-black dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
           <div>
-          <FaMobileAlt size={40} className="text-green-500 mb-4" />
+          <FaMobileAlt size={40} className="text-green-500 -mt-16" />
           </div>
           <div className="text-left space-y-3 ml-4" >
           <h3 className="text-xl font-bold mb-2">App Development</h3>
@@ -44,9 +45,9 @@ const About = () => {
           </p>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md flex  items-center text-center">
+        <div className="bg-gray-100 dark:bg-black dark:text-white p-4 rounded-lg shadow-md flex  items-center text-center">
         <div>
-          <FaCamera size={40} className="text-red-500 mb-4" />
+          <FaCamera size={40} className="text-red-500 -mt-16" />
           </div>
           <div className="text-left space-y-3 ml-4">
           <h3 className="text-xl font-bold mb-2">Photography</h3>
@@ -55,9 +56,9 @@ const About = () => {
           </p>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md flex items-center text-center">
+        <div className="bg-violet-300 dark:bg-black dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
         <div>
-          <FaCode size={40} className="text-purple-500 mb-4" />
+          <FaCode size={40} className="text-purple-500 -mt-16" />
           </div>
           <div className="text-left space-y-3 ml-4">
           <h3 className="text-xl font-bold mb-2">Web Development</h3>
@@ -66,6 +67,9 @@ const About = () => {
           </p>
           </div>
         </div>
+      </div>
+      <div>
+        <AboutSliee />
       </div>
     </div>
     </div>
