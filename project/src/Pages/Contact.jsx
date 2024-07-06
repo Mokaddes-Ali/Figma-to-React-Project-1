@@ -5,7 +5,7 @@ import Sidebar from '../Components/Sidebar';
 
 const Contact = () => {
   return (
-    <div className="p-4">
+    <div className="container mx-auto">
         <div className="flex flex-row">
       {/* Left of section */}
       <div>

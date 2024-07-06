@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaRegMoon } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 
 
@@ -22,12 +22,12 @@ function Darkmode() {
     <div className="flex items-center justify-center">
       <button
         onClick={toggleDarkMode}
-        className="p-3 rounded-full bg-white dark:bg-black"
+        className="p-3 rounded-full bg-white hover:bg-blue-700  dark:bg-black dark:hover:bg-blue-700"
       >
         {darkMode ? (
           <IoIosSunny className=" w-6 h-6 text-white " />
         ) : (
-          <FaRegMoon  className="w-6 h-6 text-slate-900 " />
+          <FaMoon   className="w-6 h-6 text-slate-900 hover:text-white " />
         )}
       </button>
     </div>

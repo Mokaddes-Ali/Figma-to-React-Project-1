@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaBirthdayCake, FaDownload } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FiDownload } from 'react-icons/fi';
 import image from '../assets/Images/parson-img-1.webp';
 import { FaCalendarDays } from "react-icons/fa6";
 
@@ -8,7 +8,7 @@ import { FaCalendarDays } from "react-icons/fa6";
 const Sidebar = () => {
   return (
     <div className="w-72 h-[750px] bg-white rounded-2xl shadow-xl text-black dark:bg-black dark:text-white flex flex-col items-center p-4">
-      <img src= {image} alt="Profile" className="w-48 h-52 rounded-3xl mt-4" />
+      <img src= {image} alt="Profile" className="w-52 h-52 rounded-3xl mt-4" />
       <h1 className="mt-4 text-2xl font-bold">Monalisa Ashley </h1>
       <p className="mt-2 text-center">Ui/Ux Designer</p>
       
@@ -45,10 +45,14 @@ const Sidebar = () => {
           <span>January 1, 1990</span>
         </div>
       </div>
-      <Link to="/cv.pdf" target="_blank" className="mt-12 flex items-center space-x-2 bg-blue-600 px-4 py-2 rounded-full hover:bg-gray-500 dark:hover:bg-gray-500">
-        <FaDownload className='text-white text-xl' />
-        <span className='text-white'>Download CV</span>
-      </Link>
+      <a
+      href="cv (1).pdf"
+      download
+      className="flex items-center px-6 py-3 mt-6 -ml-12 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
+    >
+      <FiDownload className="mr-2" />
+      Download Cv
+    </a>
     </div>
   );
 };

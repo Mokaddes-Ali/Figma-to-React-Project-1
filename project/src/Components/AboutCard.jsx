@@ -2,17 +2,17 @@ import React from 'react';
 import { FaPaintBrush, FaMobileAlt, FaCamera, FaCode } from 'react-icons/fa';
 import Sidebar from './Sidebar';
 import { IoRemoveOutline } from "react-icons/io5";
-import AboutSliee from './AboutSliee';
+import AboutSliede from './AboutSliede';
 
-const About = () => {
+const AboutCard = () => {
   return (
     <div className="flex flex-row">
       {/* Left of section */}
-      <div>
-        <Sidebar />
+      <div className='h-screen'>
+        <Sidebar className="" />
       </div>
       {/* Right of the About Section */}
-    <div className="p-8 rounded-2xl bg-white dark:bg-black dark:text-white shadow-md text-gray-800 ml-12 w-[850px]">
+    <div className="rounded-2xl bg-white dark:bg-black dark:text-white shadow-md text-gray-800 w-[1000px] ">
       <h1 className="text-3xl font-bold mb-6 text-left flex">About Me <span className="mt-2"><IoRemoveOutline className='text-8xl -mt-9 -ml-4' /></span></h1>
       <p className="mb-8 text-left -mt-8">
       I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
@@ -27,7 +27,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-lime-100 dark:bg-black dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
           <div className="card-icon ">
-          <FaPaintBrush size={30} className="text-blue-500 -mt-16" />
+          <FaPaintBrush size={30} className="text-blue-500 -mt-16 hover:scroll-p-7" />
           </div>
           <div className="text-left space-y-3 ml-4">
           <h3 className="text-xl font-bold mb-2">UI/UX Design</h3>
@@ -69,11 +69,11 @@ const About = () => {
         </div>
       </div>
       <div>
-        <AboutSliee />
+        <AboutSliede />
       </div>
     </div>
     </div>
   );
 };
 
-export default About;
+export default AboutCard;

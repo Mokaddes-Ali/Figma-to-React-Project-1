@@ -12,7 +12,7 @@ import Home from './Pages/Home';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App bg-light-mode dark:bg-dark-mode">
         <Navbar />
         <div className="p-4">
           <Routes>
@@ -25,7 +25,7 @@ function App() {
             <Route path="/cv.pdf" element={<div>Your CV PDF will open/download here.</div>} />
           </Routes>
         </div>
-      </div>
+       </div>
     </Router>
   );
 }

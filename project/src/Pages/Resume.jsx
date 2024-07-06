@@ -4,7 +4,7 @@ import Sidebar from '../Components/Sidebar';
 
 export default function Resume() {
   return (
-    <div>
+    <div className='container mx-auto'>
         <div className="flex flex-row">
       {/* Left of section */}
       <div>
