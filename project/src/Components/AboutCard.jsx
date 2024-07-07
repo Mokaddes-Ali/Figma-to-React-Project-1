@@ -12,7 +12,7 @@ const AboutCard = () => {
         <Sidebar className="" />
       </div>
       {/* Right of the About Section */}
-    <div className="rounded-2xl bg-white dark:bg-black dark:text-white shadow-md text-gray-800 w-[1000px] ">
+    <div className="rounded-2xl bg-white dark:bg-black dark:text-white shadow-md text-gray-800 w-[850px] ">
       <h1 className="text-3xl font-bold mb-6 text-left flex">About Me <span className="mt-2"><IoRemoveOutline className='text-8xl -mt-9 -ml-4' /></span></h1>
       <p className="mb-8 text-left -mt-8">
       I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.

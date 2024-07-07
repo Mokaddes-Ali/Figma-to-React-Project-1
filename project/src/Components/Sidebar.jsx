@@ -7,12 +7,12 @@ import { FaCalendarDays } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
-    <div className="w-72 h-[750px] bg-white rounded-2xl shadow-xl text-black dark:bg-black dark:text-white flex flex-col items-center p-4">
-      <img src= {image} alt="Profile" className="w-52 h-52 rounded-3xl mt-4" />
-      <h1 className="mt-4 text-2xl font-bold">Monalisa Ashley </h1>
-      <p className="mt-2 text-center">Ui/Ux Designer</p>
+    <div className="w-72 h-[800px] bg-white rounded-2xl shadow-xl text-black dark:bg-black dark:text-white flex flex-col items-center p-4">
+      <img src= {image} alt="Profile" className="w-52 h-52 rounded-3xl mt-7" />
+      <h1 className="mt-5 text-2xl font-bold">Monalisa Ashley </h1>
+      <p className="mt-3 text-center">Ui/Ux Designer</p>
       
-      <div className="mt-8 flex space-x-6 ">
+      <div className="mt-8 flex space-x-7 ">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-500">
           <FaFacebook size={30} />
         </a>

@@ -8,7 +8,7 @@ import './assets/Css/style.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className="flex flex-row dark:bg-gray-900 dark:text-white">
+    <div >
       <App />
     </div>
   </React.StrictMode>,
