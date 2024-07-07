@@ -8,8 +8,8 @@ const Contact = () => {
     <div className="container mx-auto mt-20">
         <div className="flex flex-row">
       {/* Left of section */}
-      <div>
-        <Sidebar />
+      <div className='ml-14'>
+        <Sidebar className="" />
       </div>
       {/* Right of the About Section */}
       <div>
