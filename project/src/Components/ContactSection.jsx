@@ -1,10 +1,9 @@
-// src/pages/Contact.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [success, setSuccess] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -14,69 +13,82 @@ const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    // Handle form submission logic here (e.g., send data to server)
     console.log('Form data submitted:', formData);
-    setSuccess(true);
+
+    // Show success message
+    setShowSuccessMessage(true);
+    setFormData({ name: '', email: '', message: '' }); // Reset form data (optional)
     setTimeout(() => {
-      setSuccess(false);
-      navigate('/Contact');
+      setShowSuccessMessage(false);
+      navigate('/Contact'); // Redirect after success message (optional)
     }, 3000); // Redirect after 3 seconds
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 bg-black text-white">
       <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
       <h2 className="text-2xl mb-2">We would love to hear from you</h2>
       <h2 className="text-2xl mb-6">Please fill out the form below</h2>
       
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-          <input 
-            type="text" 
-            name="name" 
-            id="name" 
-            value={formData.name} 
-            onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
-            required 
-          />
+        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-1 sm:gap-y-0">
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium">Name</label>
+            <input 
+              type="text" 
+              name="name" 
+              id="name" 
+              value={formData.name} 
+              onChange={handleChange}
+              className="mt-1 block w-full p-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white"
+              required 
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-          <input 
-            type="email" 
-            name="email" 
-            id="email" 
-            value={formData.email} 
-            onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
-            required 
-          />
+        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-1 sm:gap-y-0">
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium">Email</label>
+            <input 
+              type="email" 
+              name="email" 
+              id="email" 
+              value={formData.email} 
+              onChange={handleChange}
+              className="mt-1 block w-full p-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white"
+              required 
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-          <textarea 
-            name="message" 
-            id="message" 
-            value={formData.message} 
-            onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
-            required 
-          />
+        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-1 sm:gap-y-0">
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium">Message</label>
+            <textarea 
+              name="message" 
+              id="message" 
+              value={formData.message} 
+              onChange={handleChange}
+              className="mt-1 block w-full p-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white"
+              rows="4" 
+              required 
+            />
+          </div>
         </div>
-        <div>
+        <div className="flex justify-end">
           <button 
-            type="submit" 
-            className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            type="submit"
+            className="bg-indigo-600 text-white hover:bg-indigo-700 transition-colors duration-300 px-4 py-2 rounded-md"
           >
             Submit
           </button>
         </div>
       </form>
-      {success && (
-        <div className="mt-4 p-4 border border-green-500 bg-green-100 text-green-700 rounded-md">
-          Your message has been sent successfully!
+
+      {/* Success Message */}
+      {showSuccessMessage && (
+        <div className="fixed top-4 right-4 transform translate-y-0 bg-green-500 text-white p-4 rounded-md shadow-md transition-all duration-500 ease-in-out">
+          <p className="font-semibold">Success!</p>
+          <p>Your form has been submitted successfully.</p>
         </div>
       )}
     </div>

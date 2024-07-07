@@ -12,7 +12,7 @@ import Home from './Pages/Home';
 function App() {
   return (
     <Router>
-      <div className="App bg-light-mode dark:bg-dark-mode w-screen bg-cover bg-no-repeat">
+      <div className="App bg-light-mode dark:bg-dark-mode bg-cover bg-center h-[1600px] w-[1349px]">
         <Navbar />
         <div className="p-4">
           <Routes>
