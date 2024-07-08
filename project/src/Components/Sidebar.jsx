@@ -46,9 +46,9 @@ const Sidebar = () => {
         </div>
       </div>
       <a
-      href="cv (1).pdf"
+      href="cv.pdf"
       download
-      className="flex items-center px-6 py-3 mt-6 -ml-12 bg-rose-500 text-white rounded-full hover:bg-rose-400 hover:text-black transition duration-300"
+      className="flex items-center px-6 py-3 mt-6 -ml-12 bg-rose-500 text-white rounded-full hover:bg-rose-400 hover:text-black dark:hover:text-white dark:hover:bg-slate-500 transition duration-300"
     >
       <FiDownload className="mr-2" />
       Download Cv

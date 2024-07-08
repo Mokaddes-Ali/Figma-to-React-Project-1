@@ -26,7 +26,7 @@ const AboutSection = () => {
       
       <h2 className="text-2xl font-semibold mb-6 left -mt-3 ">What I Do</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-lime-100 dark:bg-black dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
+        <div className="bg-lime-100 dark:bg-gray-800 dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
           <div className="card-icon ">
           <FaPaintBrush size={30} className="text-blue-500 -mt-16 hover:scroll-p-7" />
           </div>
@@ -35,7 +35,7 @@ const AboutSection = () => {
           <p>Creating intuitive and beautiful user interfaces and experiences.Creating intuitive and beautiful user interfaces and experiences</p>
           </div>
         </div>
-        <div className="bg-gray-300 dark:bg-black dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
+        <div className="bg-gray-300   dark:bg-slate-900 dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
           <div>
           <FaMobileAlt size={40} className="text-green-500 -mt-16" />
           </div>
@@ -46,7 +46,7 @@ const AboutSection = () => {
           </p>
           </div>
         </div>
-        <div className="bg-gray-100 dark:bg-black dark:text-white p-4 rounded-lg shadow-md flex  items-center text-center">
+        <div className="bg-gray-100  dark:bg-slate-900 dark:text-white p-4 rounded-lg shadow-md flex  items-center text-center">
         <div>
           <FaCamera size={40} className="text-red-500 -mt-16" />
           </div>
@@ -57,7 +57,7 @@ const AboutSection = () => {
           </p>
           </div>
         </div>
-        <div className="bg-violet-300 dark:bg-black dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
+        <div className="bg-violet-300 dark:bg-gray-800 dark:text-white p-4 rounded-lg shadow-md flex items-center text-center">
         <div>
           <FaCode size={40} className="text-purple-500 -mt-16" />
           </div>

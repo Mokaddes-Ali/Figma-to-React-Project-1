@@ -4,9 +4,11 @@ import Navbar from '../Components/Navbar';
 
 const About = () => {
   return (
-    <div className="container mx-auto  mt-5">
+    <div>
       <Navbar />
+    <div className="container mx-auto  mt-5">
       <AboutSection />
+    </div>
     </div>
   );
 };

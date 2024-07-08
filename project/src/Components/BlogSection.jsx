@@ -93,6 +93,7 @@ const cardSets = [
       title: '27 April. Inspiration',
       text: 'This is a description of the card content.',
       detailedText:  'Detailed text for Card Title 12.',
+      color: 'bg-indigo-200',
     },
   ],
 ];
@@ -122,11 +123,11 @@ const BlogSection = () => {
     <div className='container mx-auto p-4 dark:bg-black dark:text-white bg-white text-gray-900'>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {cardSets[activeSet].map((card, index) => (
-          <div key={index} className='rounded-lg shadow-md p-4 dark:bg-gray-900 '>
+           <div key={index} className={`rounded-lg shadow-md p-4 ${card.color} ${darkMode ? 'text-white dark:bg-red-700' : 'text-gray-900 dark:bg-black'}`}>
             <img
               src={card.image}
               alt={card.title}
-              className="w-68 h-64 pt-5 pl-10 hover:w-80 hover:h-76 object-cover rounded-t-lg cursor-pointer"
+              className="w-68 h-64 ml-5 rounded-2xl hover:w-76 hover:h-80 cursor-pointe"
               onClick={() => openModal(card)}
             />
             <h3 className="mt-4 ml-5 text-md text-gray-500 dark:text-gray-400">{card.title}</h3>

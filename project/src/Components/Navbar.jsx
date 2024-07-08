@@ -8,10 +8,14 @@ const Navbar = () => {
   return (
     <div className=" flex md:flex md:flex-rows justify-between items-center pt-8">
       <div className="flex items-center ml-[87px] mt-10 mb-10">
-        <NavLink to="/Home">
-      <img src= {logo} alt="Logo" className="h-9 mr-2" />
-      </NavLink>
-        <div className = "ml-[860px]" >
+      <a 
+          href="https://bostami-bootstrap-nextjs.vercel.app/#demo" 
+          rel="noopener noreferrer"
+          className="button-link"
+        >
+          <img src= {logo} alt="Logo" className="h-9 mr-2" />
+        </a>
+        <div className = "ml-[870px]" >
         <Darkmode  />
         </div>
         <div className="ml-5">

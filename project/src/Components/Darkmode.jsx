@@ -22,7 +22,7 @@ function Darkmode() {
     <div className="flex items-center justify-center">
       <button
         onClick={toggleDarkMode}
-        className="p-4 rounded-full bg-white hover:bg-blue-700  dark:bg-black dark:hover:bg-blue-700"
+        className="p-3 rounded-full bg-white hover:bg-blue-700  dark:bg-black dark:hover:bg-blue-700"
       >
         {darkMode ? (
           <IoIosSunny className=" w-6 h-6 text-white " />
