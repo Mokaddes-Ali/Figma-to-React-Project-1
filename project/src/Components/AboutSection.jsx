@@ -1,20 +1,21 @@
 import React from 'react';
 import { FaPaintBrush, FaMobileAlt, FaCamera, FaCode } from 'react-icons/fa';
 import Sidebar from './Sidebar';
-import { IoRemoveOutline } from "react-icons/io5";
 import AboutSliede from './AboutSliede';
+import Footer from './Footer';
 
-const AboutCard = () => {
+const AboutSection = () => {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row container mx-auto">
       {/* Left of section */}
-      <div className='h-screen'>
+      <div className='h-screen ml-14'>
         <Sidebar className="" />
       </div>
       {/* Right of the About Section */}
-    <div className="rounded-2xl bg-white dark:bg-black dark:text-white shadow-md text-gray-800 w-[850px] ">
-      <h1 className="text-3xl font-bold mb-6 text-left flex">About Me <span className="mt-2"><IoRemoveOutline className='text-8xl -mt-9 -ml-4' /></span></h1>
-      <p className="mb-8 text-left -mt-8">
+    <div className="rounded-2xl bg-white  ml-14 w-[830px] h-[1005px] dark:bg-black dark:text-white shadow-md text-gray-800 ">
+      <div className="m-10">
+      <h1 className="text-3xl font-bold mb-6 text-left flex">About Me  <span className="bg-blue-700 h-1 w-36 mt-6 ml-8 block"></span></h1>
+      <p className="mb-8 text-left mt-8">
       I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
        I enjoy turning complex problems into simple, beautiful and intuitive designs.
       </p>
@@ -71,9 +72,13 @@ const AboutCard = () => {
       <div>
         <AboutSliede />
       </div>
+      <div className='-ml-10'>
+        <Footer />
+      </div>
+    </div>
     </div>
     </div>
   );
 };
 
-export default AboutCard;
+export default AboutSection;

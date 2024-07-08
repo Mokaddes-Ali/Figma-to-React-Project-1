@@ -11,9 +11,9 @@ import Home from './Pages/Home';
 
 function App() {
   return (
+    <div>
     <Router>
-      <div className="App bg-light-mode dark:bg-dark-mode bg-cover bg-center h-[1600px] w-[1349px]">
-        <Navbar />
+      <div className="App bg-light-mode dark:bg-dark-mode bg-cover bg-center h-[1350px] w-[1349px]">
         <div className="p-4">
           <Routes>
             <Route path="/About" element={<About />} />
@@ -27,6 +27,7 @@ function App() {
         </div>
        </div>
     </Router>
+    </div>
   );
 }
 

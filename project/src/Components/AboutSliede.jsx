@@ -26,7 +26,7 @@ const AboutSliee = () => {
 
   return (
     <div className="container mx-auto py-8 mt-4">
-     <h1 className="text-2xl text-center mb-10 mt-10 text-black font-semibold">Clinet</h1>
+     <h1 className="text-2xl text-center mb-10 mt-10 text-black font-semibold dark:text-white">Clinet</h1>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="px-2">

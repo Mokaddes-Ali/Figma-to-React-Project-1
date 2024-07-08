@@ -1,10 +1,12 @@
 import React from 'react';
-import AboutCard from '../Components/AboutCard';
+import AboutSection from '../Components/AboutSection';
+import Navbar from '../Components/Navbar';
 
 const About = () => {
   return (
-    <div className="mt-20 container mx-auto">
-      <AboutCard />
+    <div className="container mx-auto  mt-5">
+      <Navbar />
+      <AboutSection />
     </div>
   );
 };
