@@ -3,27 +3,28 @@ import { FaBriefcase, FaCode, FaCamera, FaPalette } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const experienceData = [
-  { id: 1, title: 'Frontend Developer', description: 'Company A', icon: <FaCode /> },
-  { id: 2, title: 'Photographer', description: 'Company B', icon: <FaCamera /> },
-  { id: 3, title: 'Graphic Designer', description: 'Company C', icon: <FaPalette /> },
+  { id: 1, title: '2019 - Present', description: 'Sr. Software Tester', icon: 'Google Inc.' },
+  { id: 2, title: '2015-2017', description: 'Cr. Web Developer', icon: 'Creative Gigs' },
+  { id: 3, title: '2014 - 2015', description: 'Company C', icon: 'ib-themes ltd.' },
 ];
 
 const Experience = () => {
   return (
-    <section>
-      <h2 className="text-2xl font-bold flex items-center"><FaBriefcase className="mr-2" /> Experience</h2>
+    <section className='-ml-16'>
+      <h2 className="text-2xl font-bold flex items-center"><FaBriefcase className=" text-gray-500 text-[40px] mr-5 dark:text-blue-700" /> Experience</h2>
       <div className="mt-4 space-y-4">
         {experienceData.map((exp) => (
           <motion.div
             key={exp.id}
-            className="p-4 rounded-lg shadow-lg bg-gray-200"
+            className="p-4 rounded-lg h-28 w-80 dark:bg-slate-900 shadow-lg bg-gray-200"
             whileHover={{ scale: 1.05 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-xl font-semibold flex items-center">{exp.icon} <span className="ml-2">{exp.title}</span></h3>
-            <p>{exp.description}</p>
+             <span className="ml-2 text-left">{exp.title}</span>
+            <p className="text-xl font-semibold text-left">{exp.description}</p>
+            <h3 >{exp.icon} </h3>
           </motion.div>
         ))}
       </div>
