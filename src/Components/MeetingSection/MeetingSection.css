@@ -1,0 +1,21 @@
+.Main-Meeting{
+   margin-left: 0;
+   margin-right: 0;
+    width: 1350px;
+     height: 585px;
+     top: 1275px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #FAFAFA;
+
+
+}
+
+.Meeting-Play{
+   padding-top: 70px;
+   
+}
+.Meeting-text{
+   font-weight: 900;
+   font-size: 50px;
+}

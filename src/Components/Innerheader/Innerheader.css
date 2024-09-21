@@ -1,0 +1,21 @@
+.Inner-Main{
+    width: 1350px;
+    height: 400px;
+    top: 875px;
+    gap: 0px;
+   opacity: 0px;
+
+}
+
+.Main-color{
+   background-color: #FFFFFF;
+}
+.Call{
+   padding-left: 60px;
+   color: #3F3F46;
+}
+
+.Good-text{
+   font-weight: 800;
+
+}

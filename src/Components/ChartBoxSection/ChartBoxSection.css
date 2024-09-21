@@ -1,0 +1,20 @@
+.Main-chat{
+
+    width: 1350px;
+    height: 639px;
+    top: 1860px;
+    gap: 0px;
+    opacity: 0px;
+
+
+}
+
+.Chat{
+    padding-top: 80px;
+}
+.Chat-text{
+    font-size: 30px;
+    font-family: "Paytone One", sans-serif;
+    
+    font-weight: 900;
+}
