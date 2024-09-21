@@ -1,12 +1,12 @@
 import React, { Fragment} from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import '../../Components/Innerheader/Innerheader.css';
+import '../../Components/Innerheader/Inner.css';
 import icon from '../../Assets/Images/icon.png';
 import iconn from '../../Assets/Images/iconn.png';
 import icons from '../../Assets/Images/icons.png';
 
 
-const Innerheader = () => {
+const Inner = () => {
    return (
       <Fragment>
                <Container fluid className='Inner-Main'>
@@ -44,6 +44,6 @@ const Innerheader = () => {
     )
 }
 
-export default Innerheader
+export default Inner;
 
 

@@ -9,8 +9,8 @@ import ChartBoxSection from './Components/ChartBoxSection/ChartBoxSection';
 import OrderSection from './Components/OrderSection/OrderSection';
 import ReviewSection from './Components/ReviewSection/ReviewSection';
 import Footer from './Components/Footer/Footer';
-import Innerheader from './Components/Innerheader/Innerheader';
-import MeetingSection from './Components/MeetingSection/MeetingSection';
+import Meeting from './Components/Meeting/Meeting';
+import Inner from './Components/Innerheader/Inner';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,12 +18,10 @@ root.render(
     <>
    <NavBar />
    <TopHeader />
-   <div>
-    <Innerheader />
-    <MeetingSection />
-    </div>
+   <Inner />
    <ChartBoxSection />
    <OrderSection />
+   <Meeting />
    <ReviewSection />
    <Footer />
    </>

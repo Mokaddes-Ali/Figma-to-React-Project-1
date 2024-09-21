@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
-import '../../Components/MeetingSection/MeetingSection.css';
+import './Meeting.css';
 
 
 
-const MeetingSection = () => {
+const Meeting = () => {
   return (
       <Fragment> 
 
@@ -44,5 +44,5 @@ const MeetingSection = () => {
   )
 }
 
-export default MeetingSection
+export default Meeting;
 
