@@ -9,7 +9,6 @@ export default class ChartBoxSection extends Component {
   render() {
     return (
       <Fragment className='Main-chat'>
-
                         <Container className='Chat'>
                               <Row>
                                     <Col lg={6} md={6} sm={12} className='mt-5'>

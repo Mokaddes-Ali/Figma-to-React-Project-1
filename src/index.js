@@ -5,20 +5,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './Components/NavBar/NavBar';
 import TopHeader from './Components/TopHeader/TopHeader';
-import Innerheader from './Components/Innerheader/Innerheader';
-import MeetingSection from './Components/MeetingSection/MeetingSection';
 import ChartBoxSection from './Components/ChartBoxSection/ChartBoxSection';
 import OrderSection from './Components/OrderSection/OrderSection';
 import ReviewSection from './Components/ReviewSection/ReviewSection';
 import Footer from './Components/Footer/Footer';
+import Innerheader from './Components/Innerheader/Innerheader';
+import MeetingSection from './Components/MeetingSection/MeetingSection';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <NavBar />
    <TopHeader />
-   <Innerheader />
-   <MeetingSection />
+    <Innerheader />
+     <MeetingSection />
    <ChartBoxSection />
    <OrderSection />
    <ReviewSection />
