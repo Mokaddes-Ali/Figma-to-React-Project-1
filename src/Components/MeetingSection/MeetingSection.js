@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
 import '../../Components/MeetingSection/MeetingSection.css';
@@ -40,10 +40,7 @@ const MeetingSection = () => {
                        </Row>
                  </Container>
                  </Container>
-
-             
         </Fragment>
-    
   )
 }
 
